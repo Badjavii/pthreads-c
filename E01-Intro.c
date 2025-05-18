@@ -4,17 +4,6 @@
 #include <string.h>
 
 /**
- * @file pthreads.c
- * @brief Demonstrates basic usage of POSIX threads (pthreads) in C.
- *
- * This program creates a new thread that prints "Hello world" to the screen.
- * It showcases the use of the pthread_create function and basic thread management.
- *
- * @author badjavii
- * @date 2025
- */
-
-/**
  * @brief Thread function that prints a message to the screen.
  *
  * This function is intended to be executed by a separate thread.
