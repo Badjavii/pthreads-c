@@ -74,13 +74,14 @@ La ejecución en paralelo mejora la velocidad y eficiencia del procesamiento.
 ```mermaid
 gantt
     title Línea de Tiempo de Ejecución de Hilos
-    dateFormat  HH:MM
+    dateFormat  HH:mm 
+    axisFormat %H:%M 
     section Hilo 1
-    Tarea A :done, start, 12:00, 12:10
-    Tarea B :active, 12:10, 12:20
+    Task A :done, a1, 12:00, 12:10
+    Task B :active, a2, after a1, 10m
     section Hilo 2
-    Tarea C :done, start, 12:00, 12:15
-    Tarea D :active, 12:15, 12:25
+    Task C :done, c1, 12:00, 12:15
+    Task D :active, c2, after c1, 10m
 ```
 
 ## Desafíos del Multihilo

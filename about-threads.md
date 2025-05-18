@@ -74,13 +74,14 @@ Parallel execution improves processing speed and efficiency.
 ```mermaid
 gantt
     title Thread Execution Timeline
-    dateFormat  HH:MM
+    dateFormat  HH:mm 
+    axisFormat %H:%M 
     section Thread 1
-    Task A :done, start, 12:00, 12:10
-    Task B :active, 12:10, 12:20
+    Task A :done, a1, 12:00, 12:10
+    Task B :active, a2, after a1, 10m
     section Thread 2
-    Task C :done, start, 12:00, 12:15
-    Task D :active, 12:15, 12:25
+    Task C :done, c1, 12:00, 12:15
+    Task D :active, c2, after c1, 10m
 ```
 
 ## Multithreading Challenges
